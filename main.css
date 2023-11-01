@@ -5,17 +5,19 @@
 }
 
 body{
-
+  font-family: 'Roboto', sans-serif;
 }
 
 .side-bar{/* auto-fit*/
   background-color:rgb(69, 143, 205);
   color:#fff;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr;
   grid-template-columns: 200px;
   width: 200px;
-  height: auto;
+  height: 100vh;
+  margin:0;
+  padding:0;
 }
 
 .logo{
@@ -23,29 +25,50 @@ body{
   grid-row:1/2;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding:1rem 2rem 1rem 0;
+  margin:0;
+  justify-self: self-start;
+  align-self: baseline;
 }
 
 #dashboard-logo{
-  border: 1px solid pink;
-  grid-column:1/2;
-  width:30%;
-  height: 30%;
-  justify-content: center;
-  align-items: center;
+  margin:0;
+  padding:0;
+  display: grid;
+  justify-self:center;
+  align-self: center;
+  font-size: 48px;
+}
+
+#dashboard-logo .material-icons{
+  font-size: 35px;
 }
 
 #dashboard-title{
-  border: 1px solid pink;
+  margin:0;
+  padding:0;
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  font-size: x-large;
+  font-weight: 800;
 }
+
+/*^LOGO/Dashboard^*/
 
 .first-side-content{
   border: 1px solid red;
   grid-row: 2/3;
+  padding:1rem;
 }
+
+
 
 .second-side-content{
   border: 1px solid red;
   grid-row: 3/4;
+  padding:1rem;
 }
 
 /*^SIDEBARR^*/
