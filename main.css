@@ -1,0 +1,51 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+
+}
+
+.side-bar{/* auto-fit*/
+  background-color:rgb(69, 143, 205);
+  color:#fff;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 200px;
+  width: 200px;
+  height: auto;
+}
+
+.logo{
+  border: 1px solid red;
+  grid-row:1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#dashboard-logo{
+  border: 1px solid pink;
+  grid-column:1/2;
+  width:30%;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+#dashboard-title{
+  border: 1px solid pink;
+}
+
+.first-side-content{
+  border: 1px solid red;
+  grid-row: 2/3;
+}
+
+.second-side-content{
+  border: 1px solid red;
+  grid-row: 3/4;
+}
+
+/*^SIDEBARR^*/
