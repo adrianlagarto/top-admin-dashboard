@@ -14,7 +14,6 @@
 </head>
 <body>
 
-  <div class="content">
 
     <div class="side-bar">
       <div class="logo">
@@ -73,12 +72,25 @@
     </div>
   <!---^THE SIDE-BAR IS IN LEFT OF THE BODY FIX POSITION**^-->
 
+  <div class="content">
+
     <div class="header">
       <div class="top-header">
-        <div id="search-bar">*Magnifiying glass<input type="text"></div>
-        <div id="notification-bell"></div>
+        <div id="search-bar">
+          <label for="search">
+            <span class="material-icons-outlined search-icon">search</span>
+        </label>
+          <input type="text" name="search">
+        </div>
+        <div id="notification-bell">
+          <button>
+            <span class="material-icons-outlined belll"> notifications_active </span>
+          </button>
+        </div>
         <div id="profile-picture"></div>
-        <div id="account-name">Morgan Oakley</div>
+        <div id="account-name">
+          <span>Morgan Oakley</span>
+        </div>
       </div>
       <div class="bottom-header">
         <div class="left">
