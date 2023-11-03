@@ -1,5 +1,6 @@
 :root{
   --avatar1: url(https://www.w3schools.com/howto/img_avatar.png);
+  --header-shadow: box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
 }
 
 *,
@@ -124,10 +125,10 @@ body{
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
+  box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
 }
 
 .top-header{
-  border:1px solid red;
   display: grid;
   grid-template-columns: 1fr 40px 40px .5fr;
   gap:2rem;
@@ -194,7 +195,66 @@ button .belll{
 
 /*^Top part of the header^*/
 
+.bottom-header{
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content:start;
+  gap:23rem;
+}
+
+.bottom-header .left{
+  display: flex;
+  margin:1rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  min-width: 350px;
+}
+
+#profile-picture2{
+  background: var(--avatar1) center center / cover no-repeat;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.bottom-header-name{
+  display: flex;
+  flex-direction: column;
+  gap:.5rem;
+}
+
+#Hi_message{
+  font-size: 12px;
+}
+
+#account-name-at{
+  font-size: 20px;
+  font-weight: 1000;
+}
+/*^Left side of the bottom header^*/
+
+.bottom-header .right{
+  display: flex;
+  gap:1rem;
+}
+
+.bottom-header .right div{
+  background-color: rgb(69, 144, 206);
+  color:#fff;
+  font-size: 20px;
+  border-radius: 20px;
+  padding:.5rem 2rem
+}
+
+/*^Right side of the bottom header^*/
+
+
+
+/*^Bottom part of the header^*/
+
 .main-content{
-  background-color:blue;
+  background-color:rgb 227, 232, 239;
   margin-top:200px;
 }
